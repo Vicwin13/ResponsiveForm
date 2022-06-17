@@ -80,6 +80,7 @@ form input{
 }
 form div input{
     width: 26rem;
+    
 }
 
 form input:hover{
@@ -97,7 +98,9 @@ form button{
     color: white;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
 }
+
 
 form p, .terms {
     font-size: 8px;
