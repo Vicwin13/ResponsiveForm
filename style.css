@@ -130,7 +130,7 @@ img{
     bottom: 20px;
     left: 20rem;
 }
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1195px) {
    
     main.container{
         display: flex;
