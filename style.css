@@ -72,7 +72,7 @@ form {
 
 }
 form input{
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     padding: .8rem;
     /* max-width: 26rem; */
     border-radius: 5px;
@@ -105,6 +105,8 @@ form p, .terms {
     padding-top: 1.2rem ;
     color:  hsl(246, 25%, 77%);
 }
+
+
 span.terms{
     color: rgb(253, 99, 99);
     font-weight: 700;
@@ -113,7 +115,10 @@ span.terms{
 span.first, span.last, span.email, span.password{
     position: relative;
     left: 23rem;
-    bottom: 55px;
+    bottom: 1.5rem;
+    
+}
+img{
     visibility: hidden;
 }
 .FirstError, .LastError, .emailError, .passwordError{
@@ -170,4 +175,24 @@ span.first, span.last, span.email, span.password{
         width: 23rem;
         margin: 0 auto;
     }
+}
+
+@media screen and (max-width:380px) {
+    main.container form  {
+        width: 20rem;
+        margin: 0 auto;
+        
+        }
+        main.container form div input{
+            width: 16rem;
+        }
+
+        span.first, span.last, span.email, span.password{
+
+            left: 13.5rem;
+        }
+        div.text{
+            width: 20rem;
+            margin: 0 auto;
+        }
 }
