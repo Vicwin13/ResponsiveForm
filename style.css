@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,50 +9,52 @@
 }
 
 
-body{
+body {
     background-image: url(bg-intro-desktop.png);
-    background-color: rgb(255,121,120);
+    background-color: rgb(255, 121, 120);
     height: 100vh;
-    
+
 
 }
 
-main.container{
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
- 
+main.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
 }
 
-.container article{
+.container article {
     color: white;
-    
+
     width: min-content;
-  
+
 
 }
 
-.container article h1{
+.container article h1 {
     font-weight: 700;
     font-size: clamp(1rem, 3rem, 4.2rem);
-    line-height:55px;
-    
+    line-height: 55px;
+
 }
-.container article p{
+
+.container article p {
     margin-top: 1.5rem;
     width: max(30rem, 35rem);
 }
-aside{
-  
-  width: 30rem;
+
+aside {
+
+    width: 30rem;
 
 }
 
-aside div.text{
+aside div.text {
     background-color: hsl(248, 32%, 49%);
     padding: .5rem;
     text-align: center;
@@ -60,8 +62,9 @@ aside div.text{
     margin-bottom: 2em;
     color: white;
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, .4);
-    
+
 }
+
 form {
     background-color: white;
     padding: 2rem;
@@ -71,30 +74,32 @@ form {
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, .4);
 
 }
-form input{
+
+form input {
     margin-bottom: -1rem;
     padding: .8rem;
     /* max-width: 26rem; */
     border-radius: 5px;
     border: 1.8px solid hsl(249, 10%, 26%);
 }
-form div input{
+
+form div input {
     width: 26rem;
-    
+
 }
 
-form input:hover{
+form input:hover {
     box-shadow: 0px 0px 2px 1px hsl(249, 10%, 26%);
 }
 
-form input::placeholder{
+form input::placeholder {
     padding-left: 1.3rem;
 }
 
-form button{
+form button {
     padding: .5rem;
-    border: 3px solid rgba(25, 179, 112, .5) ;
-    background-color:  hsl(154, 59%, 51%);
+    border: 3px solid rgba(25, 179, 112, .5);
+    background-color: hsl(154, 59%, 51%);
     color: white;
     border-radius: 5px;
     font-weight: 600;
@@ -102,100 +107,132 @@ form button{
 }
 
 
-form p, .terms {
+form p,
+.terms {
     font-size: 8px;
     text-align: center;
-    padding-top: 1.2rem ;
-    color:  hsl(246, 25%, 77%);
+    padding-top: 1.2rem;
+    color: hsl(246, 25%, 77%);
 }
 
 
-span.terms{
+span.terms {
     color: rgb(253, 99, 99);
     font-weight: 700;
 }
 
-span.first, span.last, span.email, span.password{
+span.first,
+span.last,
+span.email,
+span.password {
     position: relative;
     left: 23rem;
     bottom: 1.5rem;
-    
-}
-img{
     visibility: hidden;
+
 }
-.FirstError, .LastError, .emailError, .passwordError{
+
+#Firstname {}
+
+.try {
+    border: 3px solid yellow;
+    height: 1rem;
+    width: 3rem;
+    position: absolute;
+}
+
+
+.FirstError,
+.LastError,
+.emailError,
+.passwordError {
     font-size: 10px;
     position: relative;
     bottom: 20px;
     left: 20rem;
+
 }
+
 @media screen and (max-width:1195px) {
-   
-    main.container{
+
+    main.container {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         margin-top: 3rem;
-        
+
     }
-    .container article{
+
+    .container article {
         margin-bottom: 3rem;
         text-align: center;
     }
-    
+
 }
+
 @media screen and (max-width:500px) {
 
-    main.container{
+    main.container {
         margin-bottom: 4rem;
     }
-  
-    .container article p{
+
+    .container article p {
         margin: 0 auto;
         width: 20em;
-       
-}
-    .container article h1{
+
+    }
+
+    .container article h1 {
         font-size: 2rem;
         line-height: 35px;
         margin-bottom: 1rem;
     }
 
-    main.container form  {
-    width: 23rem;
-    margin: 0 auto;
+    main.container form {
+        width: 23rem;
+        margin: 0 auto;
 
     }
-    main.container form div input{
+
+    main.container form div input {
         width: 19rem;
     }
-span.first, span.last, span.email, span.password{
+
+    span.first,
+    span.last,
+    span.email,
+    span.password {
 
         left: 16rem;
     }
-    div.text{
+
+    div.text {
         width: 23rem;
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width:380px) {
-    main.container form  {
+    main.container form {
         width: 20rem;
         margin: 0 auto;
-        
-        }
-        main.container form div input{
-            width: 16rem;
-        }
 
-        span.first, span.last, span.email, span.password{
+    }
 
-            left: 13.5rem;
-        }
-        div.text{
-            width: 20rem;
-            margin: 0 auto;
-        }
+    main.container form div input {
+        width: 16rem;
+    }
+
+    span.first,
+    span.last,
+    span.email,
+    span.password {
+
+        left: 13.5rem;
+    }
+
+    div.text {
+        width: 20rem;
+        margin: 0 auto;
+    }
 }
